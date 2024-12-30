@@ -1013,7 +1013,7 @@ var lmsNowPlaying = Vue.component("lms-now-playing", {
             }
         },
         prevButton(skip) {
-            if (this.$store.state.visibleMenus.size>0 || queryParams.party) {
+            if (this.$store.state.visibleMenus.size>0) {
                 return;
             }
             if (!this.disablePrev) {
@@ -1025,7 +1025,7 @@ var lmsNowPlaying = Vue.component("lms-now-playing", {
             }
         },
         nextButton(skip) {
-            if (this.$store.state.visibleMenus.size>0 || queryParams.party) {
+            if (this.$store.state.visibleMenus.size>0) {
                 return;
             }
             if (!this.disableNext) {
